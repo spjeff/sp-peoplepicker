@@ -1,3 +1,16 @@
+/**
+ * AngularJS people picker from Jason with updates.
+ * Commented out app model Request Exector in ordre to support CEWP/CEWP embed directly on parent web.
+ *
+ * @spjeff
+ * spjeff@spjeff.com
+ * http://spjeff.com
+ *
+ * version 0.10
+ * last updated 02-02-2017
+ *
+ */
+
 (function () {
 
     angular.module('sp-peoplepicker', []).directive('spPeoplePicker', function () {
@@ -33,8 +46,8 @@
             },
             controller: ['$scope', function ($scope) {
                 $scope.spContext = new SP.ClientContext();
-                //var factory = new SP.ProxyWebRequestExecutorFactory($scope.appWebUrl);
-                //$scope.spContext.set_webRequestExecutorFactory(factory);
+                //REM var factory = new SP.ProxyWebRequestExecutorFactory($scope.appWebUrl);
+                //REM $scope.spContext.set_webRequestExecutorFactory(factory);
             }]
         };
         return directive;
@@ -425,7 +438,7 @@
             PeoplePicker.prototype.Initialize = function () {
 
 			
-				/*
+				/* //REM
                 var scriptUrl = "";
                 var scriptRevision = "";
                 $('script').each(function (i, el) {
