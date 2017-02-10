@@ -32,7 +32,7 @@
         <!-- Form control example -->
         <div ng-show="people.length == 0"><span style="color:red">MISSING DATA</span></div>
         <div ng-hide="people.length == 0"><span style="color:green">HAVE DATA</span></div>
-        <input type="button" ng-disabled="people.length == 0" value="Submit" />
+        <input type="button" ng-disabled="people.length == 0" value="Submit" ng-click="submit()" />
         <input type="button" ng-disabled="people.length == 0" value="Clear" ng-click="clear()" />
 
         <hr/>

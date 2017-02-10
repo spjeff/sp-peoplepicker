@@ -1,21 +1,23 @@
 /**
- * AngularJS people picker from Jason with updates.
- * Commented out app model Request Exector in ordre to support CEWP/CEWP embed directly on parent web.
+ * AngularJS people picker from Jason Venema (https://github.com/jasonvenema/sharepoint-angular-peoplepicker) with updates.
+ * Commented out app model Request Exector in order to support CEWP/CEWP embed directly on parent web.
  *
+ * USAGE:
+ * <sp-people-picker name="taskAssignee" id="taskAssignee" data-ng-model="$scope.taskAssignees" min-entries="1" max-entries="5" allow-duplicates="false" show-login="false" show-title="true" min-characters="2" app-web-url="$scope.spAppWebUrl" />
+ * 
  * @spjeff
  * spjeff@spjeff.com
  * http://spjeff.com
  *
  * version 0.10
- * last updated 02-02-2017
+ * last updated 02-10-2017
  *
  */
 
 (function () {
 
     angular.module('sp-peoplepicker', []).directive('spPeoplePicker', function () {
-        //Usage:
-        //<sp-people-picker name="taskAssignee" id="taskAssignee" data-ng-model="$scope.taskAssignees" min-entries="1" max-entries="5" allow-duplicates="false" show-login="false" show-title="true" min-characters="2" app-web-url="$scope.spAppWebUrl" />
+        //directive
         var directive = {
             link: link,
             restrict: 'EA',
@@ -437,8 +439,8 @@
             // Initialize
             PeoplePicker.prototype.Initialize = function () {
 
-			
-				/* //REM
+
+                /* //REM
                 var scriptUrl = "";
                 var scriptRevision = "";
                 $('script').each(function (i, el) {

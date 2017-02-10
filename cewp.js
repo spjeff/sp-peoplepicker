@@ -5,6 +5,10 @@ function testCtl($scope) {
     vm.clear = function () {
         vm.people = [];
     };
+
+    vm.submit = function () {
+        alert('Form Submitted OK');
+    };
 }
 
 
