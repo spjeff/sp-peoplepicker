@@ -9,7 +9,7 @@
  * spjeff@spjeff.com
  * http://spjeff.com
  *
- * version 0.10
+ * version 0.10.0
  * last updated 02-10-2017
  *
  */

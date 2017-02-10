@@ -1,0 +1,30 @@
+{
+  "name": "sp-peoplepicker",
+  "version": "0.10.0",
+  "description": "People Picker AngularJS directive for use in SharePoint and Office 365 in host web as Content Editor Web Part (CEWP) outside of SharePoint app model.",
+  "main": "sp-peoplepicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spjeff/sp-peoplepicker.git"
+  },
+  "keywords": ["SharePoint",
+    "SharePoint",
+    "2013",
+	"O365",
+    "Office",
+    "365",
+    "REST",
+    "SPList",
+    "PeoplePicker",
+	"People Picker",
+	"Angular"],
+  "author": "Jeff Jones <spjeff@spjeff.com> (http://spjeff.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spjeff/sp-peoplepicker/issues"
+  },
+  "homepage": "https://github.com/spjeff/sp-peoplepicker#readme"
+}
